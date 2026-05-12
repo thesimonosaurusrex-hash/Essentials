@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Unit1_BouncingBall.ma
-//Last modified: Tue, May 12, 2026 10:34:12 AM
+//Last modified: Tue, May 12, 2026 11:05:43 AM
 //Codeset: UTF-8
 requires maya "2027";
 requires "mtoa" "5.6.0";
@@ -10,19 +10,19 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Mac OS X 20.4.1";
-fileInfo "UUID" "BE7388C7-2542-7F98-8173-04B157FFE594";
+fileInfo "UUID" "B85A0A34-4E41-F292-E7E7-43B1E4046F37";
 createNode transform -s -n "persp";
 	rename -uid "577216B2-024F-CBC1-A7FC-B7885DB9B5B9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 28.338906811278207 7.6529234553101819 19.994357239081261 ;
-	setAttr ".r" -type "double3" -3.9383527294783267 416.20000000010822 -7.1467278207200512e-16 ;
+	setAttr ".t" -type "double3" 19.655443925218705 7.1827337019833912 12.349347670794842 ;
+	setAttr ".r" -type "double3" -7.5383527294785209 419.40000000010804 7.8101569515351835e-16 ;
 	setAttr ".rp" -type "double3" -1.8747406083317825e-15 -1.2190986016506898e-15 0 ;
 	setAttr ".rpt" -type "double3" -4.8364153649537103e-15 -2.6614656130090979e-15 -5.8165923047404191e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "7FAB3C42-E743-2E52-E8A5-A0A88AB904D0";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 34.805865407716979;
+	setAttr ".coi" 23.354209463473317;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -303,8 +303,8 @@ createNode animCurveTU -n "pSphere1_scaleZ";
 	setAttr -s 5 ".kox[4]"  1;
 	setAttr -s 5 ".koy[4]"  0;
 select -ne :time1;
-	setAttr ".o" 26;
-	setAttr ".unw" 26;
+	setAttr ".o" 5;
+	setAttr ".unw" 5;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
