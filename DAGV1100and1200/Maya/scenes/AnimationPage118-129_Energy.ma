@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: AnimationPage118-129_Energy.ma
-//Last modified: Wed, Jun 03, 2026 08:30:50 PM
+//Last modified: Wed, Jun 03, 2026 08:33:25 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "Ultimate_Walker_IK_v1_0_1" -rfn "Ultimate_Walker_IK_v1_0_1RN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/anthonyromrell/GitRepos/Essentials/DAGV1100and1200/Maya//scenes/Rigs/Ultimate_Walker_IK_v1.0.1.ma";
@@ -16,12 +16,12 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Mac OS X 20.4.1";
-fileInfo "UUID" "1CF247C6-AA4A-C174-2EC1-16A0DDCB2E7C";
+fileInfo "UUID" "CB71D477-2948-5213-0A06-5CA14A49AD09";
 createNode transform -s -n "persp";
 	rename -uid "C9712CCD-754C-F86E-AD2A-73826B605734";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -8.0162396011481167 4.1784533675553845 -6.1874419972592403 ;
-	setAttr ".r" -type "double3" -12.93835272934496 593.79999999961888 0 ;
+	setAttr ".t" -type "double3" -8.6123255449642055 3.3392046157609352 -5.5774274785944806 ;
+	setAttr ".r" -type "double3" -8.1383527293443425 598.59999999961747 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "461DA5EF-F84A-C499-F69E-15ADE383DA43";
 	setAttr -k off ".v" no;
@@ -752,7 +752,8 @@ createNode animCurveTA -n "CTRL_Main_rotateX";
 	setAttr -s 3 ".kox[2]"  1;
 	setAttr -s 3 ".koy[2]"  0;
 select -ne :time1;
-	setAttr ".o" 0;
+	setAttr ".o" 24;
+	setAttr ".unw" 24;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1

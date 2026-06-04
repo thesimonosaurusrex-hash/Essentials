@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: AnimationPage118-129-Weight.ma
-//Last modified: Wed, Jun 03, 2026 07:16:09 PM
+//Last modified: Wed, Jun 03, 2026 08:33:49 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "Ultimate_Walker_IK_v1_0_1" -rfn "Ultimate_Walker_IK_v1_0_1RN"
 		 -op "v=0;" -typ "mayaAscii" "/Users/anthonyromrell/GitRepos/Essentials/DAGV1100and1200/Maya//scenes/Rigs/Ultimate_Walker_IK_v1.0.1.ma";
@@ -16,21 +16,21 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Mac OS X 20.4.1";
-fileInfo "UUID" "1D9BD5FE-DF46-AFF1-3C0D-5A836A4FFBC1";
+fileInfo "UUID" "5BE5B602-964C-DF60-4B74-249E9F846950";
 createNode transform -s -n "persp";
 	rename -uid "C9712CCD-754C-F86E-AD2A-73826B605734";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -10.220063579050541 2.526502599956475 0.87773394190950726 ;
-	setAttr ".r" -type "double3" -3.3383527310282992 989.39999999959059 0 ;
+	setAttr ".t" -type "double3" -9.0872073647229001 3.3737868608200774 -4.4043944341368109 ;
+	setAttr ".r" -type "double3" -9.9383527310289583 965.79999999958864 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "461DA5EF-F84A-C499-F69E-15ADE383DA43";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 10.244792136354024;
+	setAttr ".coi" 10.114509137114315;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0 1.7939754253725422 -0.32044151377094798 ;
+	setAttr ".tp" -type "double3" 0 1.6281391473538551 -0.32044151377094798 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "0D53C428-9A42-5F0E-39DE-5CA36DA880B7";
@@ -101,20 +101,20 @@ createNode camera -n "leftShape" -p "left";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "ED5DF7A7-3E4C-C8A2-58D5-0AA86426FAF6";
+	rename -uid "C721D5CB-454C-B082-53D6-FF8D01FF7082";
 	setAttr -s 4 ".lnk";
 	setAttr -s 4 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "F73BDF4E-9045-7D26-0E2D-809B45B88D9A";
+	rename -uid "874077EB-E543-B133-E672-B6B6981EBCB1";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "68F1F93B-3E4A-D60C-C560-0DBF3C3D198D";
+	rename -uid "EB6CFD8A-0545-16D6-09FF-1EA3EA0FF6DB";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "A8C0C501-7F47-2A94-CDD8-1EAB9939BDDA";
+	rename -uid "826565A7-6D4A-4CFE-E9A2-C98905A9582C";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "AC91CB9A-E140-CD7A-D861-648C94E9970F";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "8860030F-554B-8AE0-AF2F-5FB2A6C10CE7";
+	rename -uid "F2B607B1-E643-2AAF-FDB2-40A32AEA04CA";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "48A7C263-8948-E2C3-249C-098B228EC5C9";
 	setAttr ".g" yes;
@@ -523,8 +523,8 @@ createNode animCurveTL -n "walker_rt_heel_ik_ctrl_translateY";
 		 7 0.0089277692567737987 10 0.15790098843651149 13 0.2906020594076788 16 0.7819223814967613
 		 19 1.3187553171056705 22 1.1019734112467345 25 -0.033546442789928133;
 select -ne :time1;
-	setAttr ".o" 16;
-	setAttr ".unw" 16;
+	setAttr ".o" 10;
+	setAttr ".unw" 10;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
